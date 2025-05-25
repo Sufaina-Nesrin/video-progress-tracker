@@ -1,0 +1,169 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 1rem; */
+  }
+
+  nav button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    color: white;
+    background-color: rgb(230, 37, 37);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+  }
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px auto;
+  gap: 30px;
+}
+/* .progress-div{
+ 
+  width: 300px;
+} */
+
+/* Video styling */
+.videoCourse {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.progress-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3f55fe 0% calc(var(--percentage) * 1%),
+    #e0e0e0 calc(var(--percentage) * 1%) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-inner {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .progress-ring {
+    margin-left: 40px;
+  }
+}
+
+/* login.css */
+
+.login-wrapper{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  /* margin-inline: auto; */
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+.login-form, .form-group{
+  width: 100%;
+  margin-inline: auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.login-form input {
+  width: 92%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+  margin-inline: auto;
+}
+
+.login-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+#login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.grey{
+  color: grey;
+}
+.login-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+}
+

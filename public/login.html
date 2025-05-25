@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Video Course Platform</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <span class="grey"
+          ><i><small>use the following credentials,</small></i
+          ><br />username: admin; password: P4$$word</span
+        >
+        <form class="login-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              minlength="4"
+              maxlength="20"
+              pattern="^[a-zA-Z0-9_]+$"
+              title="Username should be 4–20 characters and contain only letters, numbers, or underscores."
+              name="username"
+              required
+              placeholder="Enter your username" />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              minlength="6"
+              maxlength="32"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
+              title="Password must be 6–32 characters and include at least one uppercase letter, one lowercase letter, and one number."
+              name="password"
+              required
+              placeholder="Enter your password" />
+          </div>
+
+          <button id="login-btn">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>
