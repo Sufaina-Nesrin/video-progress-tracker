@@ -1,4 +1,4 @@
-# 📹 Video Progress Tracker
+# Video Progress Tracker
 A lightweight web application that tracks and saves users' progress while watching educational videos. It supports user login, progress tracking with segments, resuming playback from last watched position, and calculates overall completion percentage.
 
 ## Table of Contents
@@ -7,6 +7,7 @@ A lightweight web application that tracks and saves users' progress while watchi
 - [Usage](#usage)
 - [Features](#features)
 - [Design](#design)
+- [Live Demo](#live-demo)
 
 ## Installation
 1. Clone the repository:
@@ -71,5 +72,22 @@ becomes:
   { start: 50, end: 60 }
 ]
 ```
+- uses persistand storage for time sections, total watched time and progress.Here is an example:
+```
+{
+  _id: ObjectId,
+  userId: 1,            
+  videoId: "intro-to-ai.mp4",  
+  segments: [                  segments 
+    { start: 10, end: 30 },
+    { start: 50, end: 60 }
+  ],
+  duration: 300,               
+  totalWatchedTime:30,
+  progress: 10 //in percentage
+}
+```
+## Live-Demo
+👉 [Video Progress Tracker - Live Demo](https://video-progress-tracker-two.vercel.app/)
 
 
